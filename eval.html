@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <button id="bouton-nav">MENU</button>
+  <nav id="nav">
+    <ul>
+      <li><a href="#">Louer une voiture</a></li>
+      <li><a href="#">Louer un utilitaire</a></li>
+      <li><a href="#">Réserver un chauffeur</a></li>
+      <li><a href="#">Découvrir nos agences</a></li>
+      <li><a href="#">Mon compte</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="carousel">
+    <h1>Bienvenue à bord</h1>
+    <h2>Location de voiture 24h/24 et 7j/7</h2>
+
+    <div>
+      <form>   
+        <div>   
+          <select>
+            <option value="">Adresse de départ</option>
+          </select>
+          <input type="date">
+          <input type="date">          
+        </div>
+        <button type="submit">Valider ma recherche</button>
+      </form>
+    </div>
+  </div>
+  
+  <main id="main">
+    <header>
+      <span>7 résultats</span>
+
+      <select>
+          <option value="prix_croissant">Prix croissant</option>
+          <option value="prix_decroissant">Prix décroissant</option>
+          <option value="pertinence">Pertinence</option>
+      </select>
+    </header>
+
+    <section id="peugeot-208" class="details-voiture">
+      <div>
+        <div class="action previous">&lt;</div>
+        <img alt="Peugeot 208" src="img/vehicule1.png">
+        <div class="action next">&gt;</div>
+      </div>
+
+      <section>
+        <div class="nom">Peugeot 208</div>
+        <p class="description">
+          Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0.5km/supplémentaires)
+          <br />
+          999€ - Agence de Paris
+        </p>
+        <button class="bouton-reserver">Réserver et payer</button>
+      </section>
+    </section>
+
+    <section id="ford-fiesta" class="details-voiture">
+      <div>
+        <div class="action previous">&lt;</div>
+        <img alt="Ford Fiesta" src="img/vehicule2.png">
+        <div class="action next">&gt;</div>
+      </div>
+
+      <section>
+        <div class="nom">Ford Fiesta</div>
+        <p class="description">
+          Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0.5km/supplémentaires)
+          <br />
+          1499€ - Agence de Paris
+        </p>
+        <button class="bouton-reserver">Réserver et payer</button>
+      </section>
+    </section>
+
+    <section id="audi-a1" class="details-voiture">
+      <div>
+        <div class="action previous">&lt;</div>
+        <img alt="Audi A1" src="img/vehicule3.png">
+        <div class="action next">&gt;</div>
+      </div>
+
+      <section>
+        <div class="nom">Audi A1</div>
+        <p class="description">
+          Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0.5km/supplémentaires)
+          <br />
+          999€ - Agence de Paris
+        </p>
+        <button class="bouton-reserver">Réserver et payer</button>
+      </section>
+    </section>
+
+    <section id="opel-mokka" class="details-voiture">
+      <div>
+        <div class="action previous">&lt;</div>
+        <img alt="Opel Mokka" src="img/vehicule0.png">
+        <div class="action next">&gt;</div>
+      </div>
+
+      <section>
+        <div class="nom">Opel Mokka</div>
+        <p class="description">
+          Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0.5km/supplémentaires)
+          <br />
+          999€ - Agence de Paris
+        </p>
+        <button class="bouton-reserver">Réserver et payer</button>
+      </section>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <section>
+      <img alt="Photo de l'agence" src="img/photo-agence.jpg">
+      <p>
+        Notre Agence de <b>Paris</b>
+        <br />
+        300 boulevard de vaugirard, 75015 Paris
+        <br />
+        Ouvert 7j/7 de 09h à 13h et de 14h à 20h
+        <br />
+        01 49 78 21 33
+        <br />
+        <a href="mailto:contact@vtc.com">contact@vtc.com</a>
+      </p>
+    </section>
+  </footer>
+
+  <script type="text/javascript" src="js/carousel.js"></script>
+  <script type="text/javascript" src="js/vehicule.js"></script>
+  <script type="text/javascript" src="js/bouton-reserver.js"></script>
+  <script type="text/javascript" src="js/nav.js"></script>
+</body>
+
+</html>

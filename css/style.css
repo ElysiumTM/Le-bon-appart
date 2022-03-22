@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300&display=swap');
+
+body 
+{
+  font-family: "roboto";
+  margin: 0;
+  padding: 0;
+}
+
+#bouton-nav 
+{
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  padding: 4px 8px;
+  border-radius: 3px;
+  border: 1px solid white;
+  cursor: pointer;
+  height: 26px;
+}
+
+#nav 
+{
+  position: absolute;
+  top: 38px;
+  left: 0;
+  padding: 12px 0;
+  background-color: rgba(239, 239, 239, 1);
+  width: 100%;
+  display: none;
+}
+
+#nav > ul {
+  padding: 0 24px;
+  list-style: none;
+}
+
+#nav > ul > li {
+  margin-bottom: 12px;
+  animation: all 0.3s ease;
+}
+
+#nav > ul > li:hover {
+  padding-left: 12px;
+  font-weight: bold;
+}
+
+#nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+#footer > section 
+{
+  display: flex;
+  padding: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer > section > img 
+{
+  width: 200px;
+  margin-right: 60px;
+}
+
+#footer > section > p 
+{
+  line-height: 150%;
+}
+
+#carousel 
+{
+  width: 100%;
+  height: 65vh;
+  background-size: cover;
+  background-image: url('../img/merco1.jpg');
+  background-position: center;
+  padding-top: 24px;
+}
+
+#carousel h1 
+{  
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+#carousel h2 
+{
+  color: white;
+  text-align: center;
+  margin-top: 12px;
+  font-size: 1rem;
+}
+
+#carousel > div 
+{
+  position: absolute;
+  top: 59vh;
+  width: 100%;
+}
+
+#carousel > div > form
+{
+  display: flex;
+  justify-content: center;
+}
+
+#carousel > div > form > div
+{
+  background-color: rgba(128, 128, 128, 0.6);
+  padding: 4px;
+}
+
+#carousel > div > form > div > input
+{
+  margin: 0 12px;
+  height: 34px;
+}
+
+#carousel > div > form > div > select
+{
+  margin: 0 12px;
+  height: 39px;
+}
+
+#carousel > div > form > button
+{
+  height: 47px;
+  background-color: rgba(4, 170, 109, 0.9);
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+#main 
+{  
+  padding: 24px;
+  max-width: 960px;
+  margin : 0 auto;
+}
+
+#main > header 
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.details-voiture 
+{
+  display: flex;
+  flex-direction: row;
+  padding: 36px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.details-voiture > div 
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.details-voiture > div > .action 
+{
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.details-voiture > div > img 
+{
+  width: 350px;
+}
+
+.details-voiture > section 
+{
+  padding: 24px;
+}
+
+.details-voiture > section > .nom 
+{
+  font-size: 1.4rem;
+}
+
+.details-voiture > section > .description 
+{
+  line-height: 150%;
+}
+
+.details-voiture > section > .bouton-reserver 
+{
+  background-color: rgb(4, 216, 4);
+  color: white;
+  padding: 8px 12px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.details-voiture > section > .bouton-reserver:hover 
+{
+  background-color: rgb(4, 216, 4);
+  border: 1px solid rgb(6, 182, 15);
+  box-shadow: 0px 0px 4px #888888;
+}
+
+@media only screen and (max-width: 700px) 
+{
+  #carousel > div 
+  {
+    top: 54vh;
+  }
+
+  #carousel > div > form
+  {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #carousel > div > form > div
+  {
+    display: flex;
+    justify-content: center;
+  }
+
+  .details-voiture 
+  {
+    flex-direction: column;
+  }
+
+  .details-voiture > div 
+  {
+    justify-content: center;
+  }
+}
